@@ -1,26 +1,26 @@
 class Taskboard < Formula
   desc 'Local project management with Kanban UI and MCP server for AI assistants'
   homepage 'https://github.com/tcarac/taskboard'
-  version '0.3.0'
+  version '0.4.0'
   license 'MIT'
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/tcarac/taskboard/releases/download/v#{version}/taskboard-darwin-arm64.tar.gz"
-      sha256 '0983bc77d63403643059295dd7d20cd22bd8a432a08c4149d82e9d9028b4af22'
+      sha256 '468b24c86ebd85a258a2b47309865018a13446d83b7fdefb518a67806ac3f5fb'
     elsif Hardware::CPU.intel?
       url "https://github.com/tcarac/taskboard/releases/download/v#{version}/taskboard-darwin-amd64.tar.gz"
-      sha256 'e4c858bc202ed6b3e16e8445f0472302028b5bbbfcfb4a6764f537ed29c71d9c'
+      sha256 '7621c0a2cd6652bc04d8df7f83822b79bfc35ec098fa334181f7a8ca948a1e79'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/tcarac/taskboard/releases/download/v#{version}/taskboard-linux-arm64.tar.gz"
-      sha256 '8d15bc8fb9322aed8ca4f3915761f836f09632a28af929493bd438e13b504056'
+      sha256 '1d76abdb4c10b3b791265e8895f473b90bb213ce3d69bcc3cca0ad50c7a380c1'
     elsif Hardware::CPU.intel?
       url "https://github.com/tcarac/taskboard/releases/download/v#{version}/taskboard-linux-amd64.tar.gz"
-      sha256 '079aa9e5f64ac74ac4e344b05d27a383aa6b759980013b3f8d00681f94281e12'
+      sha256 'b9e626690dad49860a63bc06ab6e337dac62b8010746ab7b5896e0201ae934c1'
     end
   end
 
