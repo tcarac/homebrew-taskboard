@@ -7,20 +7,20 @@ class Taskboard < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/tcarac/taskboard/releases/download/v#{version}/taskboard-darwin-arm64.tar.gz"
-      sha256 '928cd453ad7151fe04dd7959dada839c9a78335f8ec375f6f9f7e2e550669b66'
+      sha256 'c868a9366483b9e09624d355acee6fbad76e19eaef43a22099dfa5c0754f513b'
     elsif Hardware::CPU.intel?
       url "https://github.com/tcarac/taskboard/releases/download/v#{version}/taskboard-darwin-amd64.tar.gz"
-      sha256 '3884b973924c3334a667642ab5512d8fd0b38491f139ad3ca74f018b43b93e3e'
+      sha256 '9a74d1a9dea02e66dfe124107f2675a4c86b33ffdc06276d7e81c96acdf60d03'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/tcarac/taskboard/releases/download/v#{version}/taskboard-linux-arm64.tar.gz"
-      sha256 '6bb831b102327413abeacd800347d4749cbe0d6c6d6cc1f4f73306573fa348b9'
+      sha256 '3749fb985f544fdb6788ba1dff69761e599ff82b3fe86d39ca54307c0f523e9d'
     elsif Hardware::CPU.intel?
       url "https://github.com/tcarac/taskboard/releases/download/v#{version}/taskboard-linux-amd64.tar.gz"
-      sha256 '03541483f3ba41a20df4da94b3cfc6b8ed41af5a9c9d93f810ae1a6b117325e2'
+      sha256 'ea5d28c266d4cc7caf4aa86f5efd575871d6255ff2e41d61a84201f5d68647e9'
     end
   end
 
